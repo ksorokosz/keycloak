@@ -21,7 +21,6 @@ services:
         - backend
   keycloak:
       image: jboss/keycloak
-      command: ["-c", "standalone.xml"]
       environment:
         PROXY_ADDRESS_FORWARDING: "true"
         DB_VENDOR: POSTGRES
